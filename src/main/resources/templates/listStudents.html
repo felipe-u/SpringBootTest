@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lista de estudiantes</title>
+</head>
+<body>
+
+	<h1>Lista de estudiantes</h1>
+	<br>
+
+	<div class="container">
+		<div class="row">
+			<ul th:each="student: ${students}">
+				<li th:text=${student.id}></li>
+				<li th:text=${student.name}></li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
